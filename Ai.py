@@ -8,6 +8,7 @@ from urllib.error import URLError, HTTPError
 import socket
 import time
 
+
 # Define a function to retry URL requests
 def url_get(url, retries=3, backoff_factor=2):
     """
@@ -137,6 +138,8 @@ model.fit(train_ds, epochs=20)
 # 4. Evaluate the Model
 loss, accuracy = model.evaluate(eval_ds)
 print(f"Accuracy: {accuracy:.4f}")
+
+
 
 # 5. Make Predictions
 # Example: Predict survival for new passengers
